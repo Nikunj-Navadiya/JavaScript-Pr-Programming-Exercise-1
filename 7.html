@@ -1,0 +1,24 @@
+<!-- Write a javascript program array  create 2d array row wise sum -->
+
+<script type="text/javascript">
+
+    let arr = [
+        [7, 8, 9],
+        [1, 2, 3],
+        [4, 5, 6]
+    ];
+
+    let rowSums = [];
+
+    for (let i = 0; i < arr.length; i++) {
+        let sum = 0;
+        for (let j = 0; j < arr[i].length; j++) {
+            sum += arr[i][j];
+        }
+        rowSums[i] = sum;
+    }
+
+    console.log(rowSums);
+
+
+</script>

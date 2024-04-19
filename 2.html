@@ -1,0 +1,19 @@
+<!-- Write a javascript program array sorted accending order usig for loop. -->
+
+<script type="text/javascript">
+
+    let arr1 = [3, 12, 10, 8, 7];
+
+    for (let i = 0; i < arr1.length - 1; i++) {
+        for (let j = 0; j < arr1.length - 1 - i; j++) {
+            if (arr1[j] > arr1[j + 1]) {
+                let temp = arr1[j];
+                arr1[j] = arr1[j + 1];
+                arr1[j + 1] = temp;
+            }
+        }
+    }
+
+    console.log(arr1);
+
+</script>

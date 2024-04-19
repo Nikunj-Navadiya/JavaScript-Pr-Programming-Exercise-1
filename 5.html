@@ -1,0 +1,19 @@
+<!-- Write a javascript program array delete  element array using for loop. -->
+
+<script type="text/javascript">
+
+    let arr = [10, 20, 30, 40, 50];
+    let pos = 2;
+
+    let temp = [];
+
+    for (let i = 0, j = 0; i < arr.length; i++) {
+        if (i !== pos) {
+            temp[j] = arr[i];
+            j++;
+        }
+    }
+
+    console.log(temp);
+
+</script>

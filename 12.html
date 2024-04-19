@@ -1,0 +1,31 @@
+<!-- Write a javascript program array  create 2d array and print below result.let arr = [
+         [1,2,3],
+         [4,5,6],
+         [7,8,9]
+]
+ans :- [3,2,1,4,5,6,9,8,7] -->
+
+<script type = "text/javascript">
+
+let arr = [
+         [1,2,3],
+         [4,5,6],
+         [7,8,9]
+]
+
+let ans = [];
+let cnt = 0;
+for(let i =0; i<=arr.length-1; i++){
+    if(i==0 || i==2){
+        for(j=arr.length-1; j>=0; j--){
+            ans[cnt++] = arr[i][j];
+        }
+    }else{
+        for(j=0; j<=arr.length-1; j++){
+            ans[cnt++] = arr[i][j];
+        }
+    }
+}
+    console.log(ans);
+
+</script>
